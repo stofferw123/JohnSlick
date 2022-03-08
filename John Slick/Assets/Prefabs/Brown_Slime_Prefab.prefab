@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 5533926512356802268}
   - component: {fileID: 5533926512356802267}
   m_Layer: 0
-  m_Name: _sprites_monsters_small_32
+  m_Name: Brown_Slime_Prefab
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -71,8 +71,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 1374954113
-  m_SortingLayer: 3
+  m_SortingLayerID: -522873875
+  m_SortingLayer: 5
   m_SortingOrder: 0
   m_Sprite: {fileID: 3494841588081824635, guid: aae5977d1af33b54d99e49711753c497, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
