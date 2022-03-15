@@ -6,6 +6,8 @@ using UnityEngine;
 public class AgentMovement : MonoBehaviour
 {
     [SerializeField]
+    public MovementDataSO MovementData;
+    [SerializeField]
     protected float currentVelocity = 3;
 
     [SerializeField]
@@ -15,8 +17,6 @@ public class AgentMovement : MonoBehaviour
     [Range(0.10f, 1)]
     float recoilDuration;
 
-    [field: SerializeField]
-    public MovementDataSO MovementData;
 
     Rigidbody2D rb;
 
