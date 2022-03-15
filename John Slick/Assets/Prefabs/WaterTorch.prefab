@@ -1,0 +1,100 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &2382340661443110042
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 112897547897700489, guid: ee2bff54caaefb148bef0e64d40063c1, type: 3}
+      propertyPath: m_Name
+      value: WaterTorch
+      objectReference: {fileID: 0}
+    - target: {fileID: 2997872102049459101, guid: ee2bff54caaefb148bef0e64d40063c1, type: 3}
+      propertyPath: m_Color.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2997872102049459101, guid: ee2bff54caaefb148bef0e64d40063c1, type: 3}
+      propertyPath: m_Color.g
+      value: 0.3679245
+      objectReference: {fileID: 0}
+    - target: {fileID: 2997872102049459101, guid: ee2bff54caaefb148bef0e64d40063c1, type: 3}
+      propertyPath: m_Color.r
+      value: 0.011505361
+      objectReference: {fileID: 0}
+    - target: {fileID: 2997872102049459101, guid: ee2bff54caaefb148bef0e64d40063c1, type: 3}
+      propertyPath: m_Intensity
+      value: 0.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2997872102049459101, guid: ee2bff54caaefb148bef0e64d40063c1, type: 3}
+      propertyPath: m_PointLightInnerRadius
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2997872102049459101, guid: ee2bff54caaefb148bef0e64d40063c1, type: 3}
+      propertyPath: m_PointLightOuterRadius
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2997872102049459101, guid: ee2bff54caaefb148bef0e64d40063c1, type: 3}
+      propertyPath: m_ApplyToSortingLayers.Array.size
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2997872102049459101, guid: ee2bff54caaefb148bef0e64d40063c1, type: 3}
+      propertyPath: m_ApplyToSortingLayers.Array.data[5]
+      value: 1374954113
+      objectReference: {fileID: 0}
+    - target: {fileID: 3737376726902327652, guid: ee2bff54caaefb148bef0e64d40063c1, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3737376726902327652, guid: ee2bff54caaefb148bef0e64d40063c1, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5273211985655253649, guid: ee2bff54caaefb148bef0e64d40063c1, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5273211985655253649, guid: ee2bff54caaefb148bef0e64d40063c1, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5273211985655253649, guid: ee2bff54caaefb148bef0e64d40063c1, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5273211985655253649, guid: ee2bff54caaefb148bef0e64d40063c1, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5273211985655253649, guid: ee2bff54caaefb148bef0e64d40063c1, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5273211985655253649, guid: ee2bff54caaefb148bef0e64d40063c1, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5273211985655253649, guid: ee2bff54caaefb148bef0e64d40063c1, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5273211985655253649, guid: ee2bff54caaefb148bef0e64d40063c1, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5273211985655253649, guid: ee2bff54caaefb148bef0e64d40063c1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5273211985655253649, guid: ee2bff54caaefb148bef0e64d40063c1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5273211985655253649, guid: ee2bff54caaefb148bef0e64d40063c1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 3996282989534185627, guid: ee2bff54caaefb148bef0e64d40063c1, type: 3}
+  m_SourcePrefab: {fileID: 100100000, guid: ee2bff54caaefb148bef0e64d40063c1, type: 3}
