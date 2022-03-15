@@ -5,9 +5,7 @@ using UnityEngine;
 [RequireComponent(typeof(AudioSource))]
 public class AgentStepAudioPlayer : MonoBehaviour
 {
-    [SerializeField]
     protected AudioSource audioSource;
-
     [SerializeField]
     protected float pichRandomness = 0.05f;
     protected float basePitch;
