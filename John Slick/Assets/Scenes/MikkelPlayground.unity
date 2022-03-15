@@ -193,7 +193,7 @@ TilemapRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1374954113
-  m_SortingLayer: 3
+  m_SortingLayer: 5
   m_SortingOrder: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
@@ -1303,17 +1303,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ae349f0f0f46b68478520d95ae636a9e, type: 3}
---- !u!114 &781131174 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 475909309, guid: 294cfa5f918559b46bd81fc3646f136c, type: 3}
-  m_PrefabInstance: {fileID: 848613672}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0bd88783333adbd4d8247e2822bb96eb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &848613672
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6237,10 +6226,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 9163863304828976775, guid: 0d6f8ac389f29ee4eab06245ad544bf2, type: 3}
-      propertyPath: <OnVelocityChange>k__BackingField.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 781131174}
     - target: {fileID: 9163863304828976794, guid: 0d6f8ac389f29ee4eab06245ad544bf2, type: 3}
       propertyPath: m_Name
       value: BigDudeOrc

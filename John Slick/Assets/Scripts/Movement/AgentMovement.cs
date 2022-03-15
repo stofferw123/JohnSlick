@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 [RequireComponent(typeof(Rigidbody2D))]
 public class AgentMovement : MonoBehaviour
@@ -12,6 +13,8 @@ public class AgentMovement : MonoBehaviour
 
     [SerializeField]
     Vector2 recoil = Vector2.zero;
+    [field: SerializeField]
+    public UnityEvent<float> OnVelocityChange { get; set; }
 
     [SerializeField]
     [Range(0.10f, 1)]
@@ -65,6 +68,7 @@ public class AgentMovement : MonoBehaviour
 
     private void FixedUpdate() // can't easily add forces to this, how would you do recoil effect?
     {
+        OnVelocityChange?.Invoke(currentVelocity);
         rb.velocity = currentVelocity * movementDirection.normalized + recoil;
     }
 }
