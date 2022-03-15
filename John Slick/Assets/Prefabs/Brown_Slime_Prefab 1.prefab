@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 685562112699025570}
   - component: {fileID: 685562112699025572}
   - component: {fileID: 685562112699025571}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Brown_Slime_Prefab 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -64,7 +64,7 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -81,7 +81,7 @@ GameObject:
   - component: {fileID: 731713268687324648}
   - component: {fileID: 9160122551202931731}
   - component: {fileID: 4424066462616244291}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Avatar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -140,7 +140,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -522873875
-  m_SortingLayer: 5
+  m_SortingLayer: 4
   m_SortingOrder: 0
   m_Sprite: {fileID: 3075484528470484705, guid: aae5977d1af33b54d99e49711753c497, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}

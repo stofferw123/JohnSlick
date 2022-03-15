@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 430dbf80108e5fd4f8de4642ec803544, type: 3}
   m_Name: RegularBulletData
   m_EditorClassIdentifier: 
-  <BulletPrefab>k__BackingField: {fileID: 0}
-  <BulletSpeed>k__BackingField: 1
+  <BulletPrefab>k__BackingField: {fileID: 5007338160393310728, guid: be880a4a6a4a0b645ae14a8b370252c5, type: 3}
+  <BulletSpeed>k__BackingField: 6
   <Damage>k__BackingField: 1
   <Friction>k__BackingField: 0
   <Bounce>k__BackingField: 0
