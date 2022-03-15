@@ -51,13 +51,13 @@ public class AgentMovement : MonoBehaviour
     }
 
 
-    public void Update() // purely for testing
-    {
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            DoRecoil(new Vector2(-0.5f, 0));
-        }
-    }
+    //public void Update() // purely for testing
+    //{
+    //    if (Input.GetKeyDown(KeyCode.Space))
+    //    {
+    //        DoRecoil(new Vector2(-0.5f, 0));
+    //    }
+    //}
 
     public void DoRecoil(Vector2 recoilAmount) // easier to call from another script than a coroutine
     {
