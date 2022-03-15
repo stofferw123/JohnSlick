@@ -1,5 +1,35 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1454389804
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1454389805}
+  m_Layer: 0
+  m_Name: FirePoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1454389805
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1454389804}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.92, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 7207585664444295072}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &7207585664408371420
 GameObject:
   m_ObjectHideFlags: 0
@@ -113,10 +143,11 @@ GameObject:
   - component: {fileID: 7207585664444295072}
   - component: {fileID: 6515811772917142073}
   - component: {fileID: 1908412406489946241}
-  - component: {fileID: 7207585664444295075}
-  m_Layer: 0
+  - component: {fileID: 6759597743972740158}
+  - component: {fileID: 6759597743972740159}
+  m_Layer: 6
   m_Name: PlayerDemo
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -133,6 +164,7 @@ Transform:
   m_LocalScale: {x: 0.13, y: 0.13, z: 1}
   m_Children:
   - {fileID: 7207585664408371395}
+  - {fileID: 1454389805}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -165,7 +197,7 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
-  m_LinearDrag: 1000
+  m_LinearDrag: 0
   m_AngularDrag: 0
   m_GravityScale: 0
   m_Material: {fileID: 6200000, guid: 01f556ffc46312b469087e507fd970cc, type: 2}
@@ -173,7 +205,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 4
---- !u!114 &7207585664444295075
+--- !u!114 &6759597743972740158
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -182,8 +214,37 @@ MonoBehaviour:
   m_GameObject: {fileID: 7207585664444295073}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2e9c58abe0e577e419d0ac6260d59fb5, type: 3}
+  m_Script: {fileID: 11500000, guid: dde1c1652ffc5314f8fb5ae24077d0c0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1000
-  recoil: 500
+  currentVelocity: 0
+  recoil: {x: 0, y: 0}
+  recoilDuration: 0.1
+  MovementData: {fileID: 11400000, guid: 0f2398da8f43152478e136d575246831, type: 2}
+--- !u!114 &6759597743972740159
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7207585664444295073}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2fc253a1ccf1cd34d9979acb717f69d9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OnMovementKeyPressed:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 6759597743972740158}
+        m_TargetAssemblyTypeName: AgentMovement, Assembly-CSharp
+        m_MethodName: MoveAgent
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
