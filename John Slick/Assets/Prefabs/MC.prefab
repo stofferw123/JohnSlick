@@ -202,7 +202,7 @@ GameObject:
   - component: {fileID: 3797623432772084529}
   - component: {fileID: 3797623432772084530}
   - component: {fileID: 1296996647}
-  - component: {fileID: 1296996646}
+  - component: {fileID: 5200223623144031133}
   m_Layer: 0
   m_Name: MC
   m_TagString: Untagged
@@ -243,7 +243,7 @@ MonoBehaviour:
   <OnMovementKeyPressed>k__BackingField:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1296996646}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: AgentMovement, Assembly-CSharp
         m_MethodName: MoveAgent
         m_Mode: 0
@@ -309,7 +309,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 4
---- !u!114 &1296996646
+--- !u!114 &5200223623144031133
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -318,13 +318,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 3797623432772084531}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dde1c1652ffc5314f8fb5ae24077d0c0, type: 3}
+  m_Script: {fileID: 11500000, guid: 39532a9e049944044a4d8c29f71ce170, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MovementData: {fileID: 11400000, guid: 0f2398da8f43152478e136d575246831, type: 2}
-  currentVelocity: 0
-  recoil: {x: 0, y: 0}
-  recoilDuration: 0
 --- !u!1 &3797623433024448669
 GameObject:
   m_ObjectHideFlags: 0

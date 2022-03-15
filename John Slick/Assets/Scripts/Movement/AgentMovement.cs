@@ -50,15 +50,6 @@ public class AgentMovement : MonoBehaviour
         return Mathf.Clamp(currentVelocity, 0, MovementData.maxSpeed);
     }
 
-
-    public void Update() // purely for testing
-    {
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            DoRecoil(new Vector2(-0.5f, 0));
-        }
-    }
-
     public void DoRecoil(Vector2 recoilAmount) // easier to call from another script than a coroutine
     {
         StopAllCoroutines();
