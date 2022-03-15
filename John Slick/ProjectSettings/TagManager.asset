@@ -13,12 +13,12 @@ TagManager:
   - Water
   - UI
   - Player
-  - PlayerProjectile
-  - 
-  - 
-  - 
-  - 
-  - 
+  - Bullets
+  - Enemy
+  - Obstacle
+  - EnemyMovementCollider
+  - PlayerMovementCollider
+  - BulletWallCollider
   - 
   - 
   - 
@@ -48,12 +48,15 @@ TagManager:
   - name: background
     uniqueID: 3968318483
     locked: 0
-  - name: foreground
-    uniqueID: 1374954113
-    locked: 0
   - name: player
     uniqueID: 708065909
     locked: 0
   - name: enemy
     uniqueID: 3772093421
+    locked: 0
+  - name: foreground
+    uniqueID: 1374954113
+    locked: 0
+  - name: Bullet
+    uniqueID: 2181546539
     locked: 0
