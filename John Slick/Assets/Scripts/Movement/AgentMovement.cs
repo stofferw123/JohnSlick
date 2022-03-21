@@ -17,7 +17,6 @@ public class AgentMovement : MonoBehaviour
     [Range(0.10f, 1)]
     float recoilDuration;
 
-
     Rigidbody2D rb;
 
     protected Vector2 movementDirection;
@@ -31,7 +30,6 @@ public class AgentMovement : MonoBehaviour
         if (movementInput.magnitude > 0)
         {
             if (Vector2.Dot(movementInput.normalized, movementDirection) < 0)
-                currentVelocity = 0;
             movementDirection = movementInput.normalized;
         }
         currentVelocity = CalculateSpeed(movementInput);
@@ -64,7 +62,8 @@ public class AgentMovement : MonoBehaviour
     }
 
     private void FixedUpdate() // can't easily add forces to this, how would you do recoil effect?
-    {
+    { 
+        Debug.Log(currentVelocity);
         rb.velocity = currentVelocity * movementDirection.normalized + recoil;
     }
 }
