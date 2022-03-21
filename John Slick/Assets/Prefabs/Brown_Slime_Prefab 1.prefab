@@ -59,7 +59,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!58 &685562112699025571
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -448,6 +448,7 @@ GameObject:
   - component: {fileID: 9160122551202931731}
   - component: {fileID: 4424066462616244291}
   - component: {fileID: 4615204544088385567}
+  - component: {fileID: 4849472292726663736}
   m_Layer: 8
   m_Name: Avatar
   m_TagString: Untagged
@@ -551,6 +552,40 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: afbc38144862e0649a1d20f30fc3ce5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &4849472292726663736
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4971226376401087673}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7db70e0ea77f5ac47a8f4565a9406397, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_ShadowGroup: 0
+  m_HasRenderer: 1
+  m_UseRendererSilhouette: 1
+  m_CastsShadows: 1
+  m_SelfShadows: 0
+  m_ApplyToSortingLayers: 00000000a31c563713bc87ec753a342aed93d5e08122f4512bc20782
+  m_ShapePath:
+  - {x: -0.4200557, y: -0.48205328, z: 0}
+  - {x: 0.42780557, y: -0.47236872, z: 0}
+  - {x: 0.42591926, y: -0.26801538, z: 0}
+  - {x: 0.33286983, y: -0.21542978, z: 0}
+  - {x: 0.2987436, y: 0.29218483, z: 0}
+  - {x: 0.24379763, y: 0.2977233, z: 0}
+  - {x: 0.2341103, y: 0.37134695, z: 0}
+  - {x: -0.2289437, y: 0.36359835, z: 0}
+  - {x: -0.22506878, y: 0.30159998, z: 0}
+  - {x: -0.29094258, y: 0.2977233, z: 0}
+  - {x: -0.2948175, y: -0.19051743, z: 0}
+  - {x: -0.41881523, y: -0.27382803, z: 0}
+  m_ShapePathHash: 811372873
+  m_Mesh: {fileID: 0}
+  m_InstanceId: -59314
 --- !u!1 &6671473734758297406
 GameObject:
   m_ObjectHideFlags: 0

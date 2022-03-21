@@ -979,7 +979,7 @@ MonoBehaviour:
   - {x: -0.29438293, y: 0.59962547, z: 0}
   m_ShapePathHash: -1669586396
   m_Mesh: {fileID: 0}
-  m_InstanceId: -25576
+  m_InstanceId: -27696
 --- !u!1 &3797623432612076384
 GameObject:
   m_ObjectHideFlags: 0
@@ -1293,6 +1293,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39532a9e049944044a4d8c29f71ce170, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  <health>k__BackingField: 500
+  <OnDie>k__BackingField:
+    m_PersistentCalls:
+      m_Calls: []
+  <OnGetHit>k__BackingField:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!114 &93918021
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1306,7 +1313,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MovementData: {fileID: 11400000, guid: 0f2398da8f43152478e136d575246831, type: 2}
-  currentVelocity: 3
+  currentVelocity: 0
   recoil: {x: 0, y: 0}
   <OnVelocityChange>k__BackingField:
     m_PersistentCalls:
@@ -1323,7 +1330,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  recoilDuration: 0
+  recoilDuration: 0.05
+  recoilStrength: 0.1
 --- !u!1 &3797623433024448669
 GameObject:
   m_ObjectHideFlags: 0
