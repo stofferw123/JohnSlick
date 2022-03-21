@@ -203,6 +203,10 @@ GameObject:
   - component: {fileID: 3797623432772084530}
   - component: {fileID: 1296996647}
   - component: {fileID: 5200223623144031133}
+<<<<<<< Updated upstream
+=======
+  - component: {fileID: 8852640227258371460}
+>>>>>>> Stashed changes
   m_Layer: 0
   m_Name: MC
   m_TagString: Untagged
@@ -243,7 +247,11 @@ MonoBehaviour:
   <OnMovementKeyPressed>k__BackingField:
     m_PersistentCalls:
       m_Calls:
+<<<<<<< Updated upstream
       - m_Target: {fileID: 0}
+=======
+      - m_Target: {fileID: 8852640227258371460}
+>>>>>>> Stashed changes
         m_TargetAssemblyTypeName: AgentMovement, Assembly-CSharp
         m_MethodName: MoveAgent
         m_Mode: 0
@@ -321,6 +329,47 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39532a9e049944044a4d8c29f71ce170, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+<<<<<<< Updated upstream
+=======
+  <health>k__BackingField: 3
+  <OnDie>k__BackingField:
+    m_PersistentCalls:
+      m_Calls: []
+  <OnGetHit>k__BackingField:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &8852640227258371460
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3797623432772084531}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dde1c1652ffc5314f8fb5ae24077d0c0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MovementData: {fileID: 11400000, guid: 0f2398da8f43152478e136d575246831, type: 2}
+  currentVelocity: 0
+  recoil: {x: 0, y: 0}
+  <OnVelocityChange>k__BackingField:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 959943331}
+        m_TargetAssemblyTypeName: AgentAnimations, Assembly-CSharp
+        m_MethodName: AnimatePlayer
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  recoilDuration: 0
+>>>>>>> Stashed changes
 --- !u!1 &3797623433024448669
 GameObject:
   m_ObjectHideFlags: 0
@@ -413,7 +462,7 @@ MonoBehaviour:
   m_BlendStyleIndex: 0
   m_FalloffIntensity: 0.5
   m_Color: {r: 0.5660378, g: 0.32244077, b: 0.03470988, a: 1}
-  m_Intensity: 1
+  m_Intensity: 5
   m_LightVolumeOpacity: 0
   m_ApplyToSortingLayers: 00000000a31c563713bc87ec8122f451753a342aed93d5e0
   m_LightCookieSprite: {fileID: 0}
