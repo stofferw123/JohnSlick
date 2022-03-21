@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 685562112699025570}
   - component: {fileID: 685562112699025572}
   - component: {fileID: 685562112699025571}
+  - component: {fileID: 268326335}
   m_Layer: 8
   m_Name: Brown_Slime_Prefab 1
   m_TagString: Untagged
@@ -70,6 +71,32 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.5
+--- !u!114 &268326335
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 685562112699025631}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7db70e0ea77f5ac47a8f4565a9406397, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_ShadowGroup: 0
+  m_HasRenderer: 0
+  m_UseRendererSilhouette: 1
+  m_CastsShadows: 1
+  m_SelfShadows: 0
+  m_ApplyToSortingLayers: 00000000a31c563713bc87ec753a342aed93d5e08122f4512bc20782
+  m_ShapePath:
+  - {x: -0.35459924, y: -0.42228985, z: 0}
+  - {x: 0.45190406, y: -0.4476719, z: 0}
+  - {x: 0.31652522, y: 0.5322833, z: 0}
+  - {x: -0.26998806, y: 0.5195923, z: 0}
+  m_ShapePathHash: -1530447683
+  m_Mesh: {fileID: 0}
+  m_InstanceId: -32664
 --- !u!1 &4971226376401087673
 GameObject:
   m_ObjectHideFlags: 0
