@@ -730,7 +730,7 @@ GameObject:
   - component: {fileID: 1959156390}
   m_Layer: 0
   m_Name: Avatar
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -979,7 +979,7 @@ MonoBehaviour:
   - {x: -0.29438293, y: 0.59962547, z: 0}
   m_ShapePathHash: -1669586396
   m_Mesh: {fileID: 0}
-  m_InstanceId: -27696
+  m_InstanceId: -1464
 --- !u!1 &3797623432612076384
 GameObject:
   m_ObjectHideFlags: 0
@@ -1151,9 +1151,10 @@ GameObject:
   - component: {fileID: 1296996647}
   - component: {fileID: 5200223623144031133}
   - component: {fileID: 93918021}
+  - component: {fileID: 6611524826008900156}
   m_Layer: 0
   m_Name: MC
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1332,6 +1333,22 @@ MonoBehaviour:
         m_CallState: 2
   recoilDuration: 0.05
   recoilStrength: 0.1
+--- !u!70 &6611524826008900156
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3797623432772084531}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_Size: {x: 0.5, y: 1}
+  m_Direction: 0
 --- !u!1 &3797623433024448669
 GameObject:
   m_ObjectHideFlags: 0

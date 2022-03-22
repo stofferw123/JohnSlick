@@ -9,6 +9,8 @@ public class ChaseAction : AIAction
         var direction = enemyAIBrain.Target.transform.position - transform.position;
         aiMovementData.Direction = direction.normalized;
         aiMovementData.PointOfInterest = enemyAIBrain.Target.transform.position;
-        enemyAIBrain.Move(aiMovementData.Direction, aiMovementData.PointOfInterest);
+
+        enemyPathFinder.CanMove();
+      //  enemyAIBrain.Move(aiMovementData.Direction, aiMovementData.PointOfInterest);
     }
 }
