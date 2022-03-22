@@ -20,8 +20,8 @@ public class Player : MonoBehaviour, IAgent, IHittable
         } 
     }
 
-    private bool Dead;
-
+    bool IsDead = false;
+    
     [field: SerializeField]
     public UIHealth uiHealth { get; set; }
 
@@ -36,24 +36,34 @@ public class Player : MonoBehaviour, IAgent, IHittable
         health = maxHealth;
         uiHealth.Initialize(health);
     }
+    [field: SerializeField]
+    public int health { get; set; }
+    [field: SerializeField]
+    public UnityEvent OnDie { get; set; }
+    [field: SerializeField]
+    public UnityEvent OnGetHit { get; set; }
+
+    bool IsDead = false;
 
     public void GetHit(int damage, GameObject damageDealer)
     {
-        if (Dead == false)
+        if(IsDead) return;
+        health -= damage; // auch
+        OnGetHit?.Invoke();
+        
+        if(health <= 0)
         {
-            Health -= damage;
-            OnGetHit?.Invoke();
-            if (Health <= 0)
-            {
-                OnDie?.Invoke();
-                Dead = true;
-                StartCoroutine(DeathCoroutine());
-            }
+            IsDead = true;
+            OnDie?.Invoke();
+            StartCoroutine(Death());
         }
+       // Debug.Log("Player got hit by: " + damageDealer.name);
     }
-    IEnumerator DeathCoroutine()
+
+    IEnumerator Death()
     {
-        yield return new WaitForSeconds(0.2f);
-        Destroy(gameObject);
+        this.gameObject.SetActive(false);
+        yield return new WaitForSeconds(0.2f); // should probably just reload scene here instead  
+        // do something
     }
 }

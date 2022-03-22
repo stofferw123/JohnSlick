@@ -10,8 +10,8 @@ public class AgentRenderer : MonoBehaviour
     private void Awake()
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
-        Debug.Log("Right cross product " + Vector3.Cross(Vector2.up, Vector2.right));
-        Debug.Log("leftoss product " + Vector3.Cross(Vector2.up, Vector2.right));
+        //Debug.Log("Right cross product " + Vector3.Cross(Vector2.up, Vector2.right));
+        //Debug.Log("leftoss product " + Vector3.Cross(Vector2.up, Vector2.right));
     }
     public void FaceDirection(Vector2 pointerinput)
     {

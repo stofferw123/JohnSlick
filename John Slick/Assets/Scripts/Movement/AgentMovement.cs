@@ -17,8 +17,12 @@ public class AgentMovement : MonoBehaviour
     public UnityEvent<float> OnVelocityChange { get; set; }
 
     [SerializeField]
-    [Range(0.10f, 1)]
-    float recoilDuration;
+    [Range(0.05f, 1)]
+    float recoilDuration; 
+    
+    [SerializeField]
+    [Range(0.05f, 3)]
+    float recoilStrength;
 
 
     Rigidbody2D rb;
@@ -61,7 +65,7 @@ public class AgentMovement : MonoBehaviour
 
     IEnumerator Recoil(Vector2 recoilAmount) // question is if this shouldn't sit somewhere else
     {
-        recoil = recoilAmount;
+        recoil = recoilAmount * recoilStrength;
         yield return new WaitForSeconds(recoilDuration);
         recoil = Vector2.zero;
     }
@@ -72,3 +76,7 @@ public class AgentMovement : MonoBehaviour
         rb.velocity = currentVelocity * movementDirection.normalized + recoil;
     }
 }
+
+// so we want to move an enemy with a path finder
+
+

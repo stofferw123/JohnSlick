@@ -8,6 +8,8 @@ public class IdleAction : AIAction
     {
         aiMovementData.Direction = Vector2.zero;
         aiMovementData.PointOfInterest = transform.position;
-        enemyAIBrain.Move(aiMovementData.Direction, aiMovementData.PointOfInterest);
+
+        enemyPathFinder.StopMove();
+       // enemyAIBrain.Move(aiMovementData.Direction, aiMovementData.PointOfInterest);
     }
 }
