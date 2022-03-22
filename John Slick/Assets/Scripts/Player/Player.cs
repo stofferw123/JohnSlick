@@ -21,7 +21,7 @@ public class Player : MonoBehaviour, IAgent, IHittable
     }
 
     bool IsDead = false;
-    
+  
     [field: SerializeField]
     public UIHealth uiHealth { get; set; }
 
@@ -36,14 +36,6 @@ public class Player : MonoBehaviour, IAgent, IHittable
         health = maxHealth;
         uiHealth.Initialize(health);
     }
-    [field: SerializeField]
-    public int health { get; set; }
-    [field: SerializeField]
-    public UnityEvent OnDie { get; set; }
-    [field: SerializeField]
-    public UnityEvent OnGetHit { get; set; }
-
-    bool IsDead = false;
 
     public void GetHit(int damage, GameObject damageDealer)
     {
