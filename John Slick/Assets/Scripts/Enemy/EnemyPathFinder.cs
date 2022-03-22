@@ -9,10 +9,10 @@ public class EnemyPathFinder : MonoBehaviour
     [SerializeField]
     AgentMovement agentMovement;
 
-    public Transform target;
+    Transform target;
 
-    public float speed = 0.5f;
-    public float nextWaypointDistance = 3f;
+    [SerializeField]
+    float nextWaypointDistance = 3f;
 
     Path path;
     int currentWaypoint = 0;

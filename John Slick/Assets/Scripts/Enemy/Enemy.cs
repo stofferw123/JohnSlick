@@ -38,8 +38,8 @@ public class Enemy : MonoBehaviour, IAgent, IHittable
     }
 
     public void GetHit(int damage = 1, GameObject damageDealer = null)
-    {   
-    OnGetHit?.Invoke(); 
+    {
+        OnGetHit?.Invoke();
         if (IsDead) return;
         if (--Health <= 0)
 

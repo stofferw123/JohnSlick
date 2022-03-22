@@ -304,7 +304,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee98e03e98905e44daef279baf0fb3c3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  <Distance>k__BackingField: 0.3
+  <Distance>k__BackingField: 0.15
 --- !u!1 &1507543139
 GameObject:
   m_ObjectHideFlags: 0
@@ -503,7 +503,7 @@ GameObject:
   m_Component:
   - component: {fileID: 60222769036038335}
   - component: {fileID: 7373290075439832201}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: MoveCollider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -533,12 +533,12 @@ CapsuleCollider2D:
   m_GameObject: {fileID: 1228511042396016665}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 01f556ffc46312b469087e507fd970cc, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0.0028173118, y: -0.33293504}
-  m_Size: {x: 0.9998627, y: 0.23808873}
+  m_Size: {x: 0.7, y: 0.2}
   m_Direction: 1
 --- !u!1 &6579996008495277275
 GameObject:
@@ -656,6 +656,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: afbc38144862e0649a1d20f30fc3ce5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spriteRenderer: {fileID: 6579996008495277253}
 --- !u!114 &8666358078278855518
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -687,7 +688,7 @@ MonoBehaviour:
   - {x: -0.48776492, y: -0.26977226, z: 0}
   m_ShapePathHash: 295116358
   m_Mesh: {fileID: 0}
-  m_InstanceId: -1826
+  m_InstanceId: -1754
 --- !u!1 &6579996008866726822
 GameObject:
   m_ObjectHideFlags: 0
@@ -705,7 +706,7 @@ GameObject:
   - component: {fileID: 296571667}
   - component: {fileID: 296571673}
   - component: {fileID: 296571675}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GreenSlime_Prefab
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -739,7 +740,7 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -758,7 +759,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <EnemyData>k__BackingField: {fileID: 11400000, guid: f44875880464e3946859faa739b4b530, type: 2}
-  <health>k__BackingField: 2
+  <Health>k__BackingField: 2
   <enemyAttack>k__BackingField: {fileID: 0}
   <OnGetHit>k__BackingField:
     m_PersistentCalls:
@@ -864,9 +865,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   agentMovement: {fileID: 296571673}
-  target: {fileID: 0}
-  speed: 10
-  nextWaypointDistance: 3
+  nextWaypointDistance: 0.1
 --- !u!114 &296571673
 MonoBehaviour:
   m_ObjectHideFlags: 0
