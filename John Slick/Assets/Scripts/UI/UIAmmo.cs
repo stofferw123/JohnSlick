@@ -8,7 +8,7 @@ public class UIAmmo : MonoBehaviour
     [SerializeField]
     private TextMeshProUGUI text = null;
 
-    public void UdpateBulletsText(int bulletCount)
+    public void UpdateBulletsText(int bulletCount)
     {
         if (bulletCount == 0)
         {

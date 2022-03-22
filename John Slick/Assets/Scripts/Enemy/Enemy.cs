@@ -9,7 +9,7 @@ public class Enemy : MonoBehaviour, IAgent
     EnemyDataSO EnemyData { get; set; }
 
     [field: SerializeField]
-    public int health { get; private set; } = 2;
+    public int Health { get; private set; } = 2;
     [field: SerializeField]
     public UnityEvent OnGetHit { get; set; }
     [field: SerializeField]
@@ -19,13 +19,13 @@ public class Enemy : MonoBehaviour, IAgent
 
     void Start()
     {
-        health = EnemyData.MaxHealth;
+        Health = EnemyData.MaxHealth;
     }
 
     public void GetHit(int damage = 1, GameObject damageDealer = null)
     {
         if (IsDead) return;
-        if (--health <= 0)
+        if (--Health <= 0)
         {
             IsDead = true;    // public death flag so you know
             OnDie?.Invoke();

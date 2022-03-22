@@ -3,31 +3,57 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
-public class Player : MonoBehaviour, IAgent
+public class Player : MonoBehaviour, IAgent, IHittable
 {
-
     [SerializeField]
     private int maxHealth;
-    [SerializeField]
+
     private int health;
-    private int Health { get => health; set 
+
+    [field: SerializeField]
+    public int Health { 
+        get => health; 
+        set
         {
             Health = Mathf.Clamp(value, 0, maxHealth);
             uiHealth.UpdateUI(health);
         } 
     }
 
+    private bool Dead;
+
     [field: SerializeField]
     public UIHealth uiHealth { get; set; }
 
+    [field: SerializeField]
     public UnityEvent OnDie { get; set; }
-    public UnityEvent OnGetHit { get; set; }
 
-    int IAgent.health => throw new System.NotImplementedException();
+    [field: SerializeField]
+    public UnityEvent OnGetHit { get; set; }
 
     private void Start()
     {
         health = maxHealth;
         uiHealth.Initialize(health);
+    }
+
+    public void GetHit(int damage, GameObject damageDealer)
+    {
+        if (Dead == false)
+        {
+            Health -= damage;
+            OnGetHit?.Invoke();
+            if (Health <= 0)
+            {
+                OnDie?.Invoke();
+                Dead = true;
+                StartCoroutine(DeathCoroutine());
+            }
+        }
+    }
+    IEnumerator DeathCoroutine()
+    {
+        yield return new WaitForSeconds(0.2f);
+        Destroy(gameObject);
     }
 }
