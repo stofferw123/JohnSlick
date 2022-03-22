@@ -9,7 +9,10 @@ public class Enemy : MonoBehaviour, IAgent, IHittable
     EnemyDataSO EnemyData { get; set; }
 
     [field: SerializeField]
-    public int health { get; private set; } = 2;
+
+    public int Health { get; private set; } = 2;
+
+
 
     [field: SerializeField]
     public EnemyAttack enemyAttack { get; set; }
@@ -31,15 +34,15 @@ public class Enemy : MonoBehaviour, IAgent, IHittable
 
     void Start()
     {
-        health = EnemyData.MaxHealth;
+        Health = EnemyData.MaxHealth;
     }
 
     public void GetHit(int damage = 1, GameObject damageDealer = null)
-    {
+    {   
+    OnGetHit?.Invoke(); 
         if (IsDead) return;
+        if (--Health <= 0)
 
-        OnGetHit?.Invoke(); 
-        if (--health <= 0)
         {
             IsDead = true;    // public death flag so you know
             OnDie?.Invoke();

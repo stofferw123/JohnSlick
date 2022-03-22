@@ -168,7 +168,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.054
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -453,7 +453,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   muzzle: {fileID: 1804206325}
   ammo: 8
-  weaponData: {fileID: 11400000, guid: 9ab871aae6f787c4797f3e7192447833, type: 2}
+  weaponData: {fileID: 11400000, guid: 2ad67155936c21b4a9f77871dc54d9f6, type: 2}
   reloadCoroutine: 0
   <OnShoot>k__BackingField:
     m_PersistentCalls:
@@ -470,9 +470,10 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 257669475}
-        m_TargetAssemblyTypeName: FeedbackPlayer, Assembly-CSharp
-        m_MethodName: PlayFeedback
+      - m_Target: {fileID: 3797623433024448667}
+        m_TargetAssemblyTypeName: AgentWeapon, Assembly-CSharp
+        m_MethodName: Shoot
+
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -497,6 +498,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  <OnAmmoChange>k__BackingField:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &1804206325
 GameObject:
   m_ObjectHideFlags: 0
@@ -979,7 +983,7 @@ MonoBehaviour:
   - {x: -0.29438293, y: 0.59962547, z: 0}
   m_ShapePathHash: -1669586396
   m_Mesh: {fileID: 0}
-  m_InstanceId: -1464
+  m_InstanceId: -16920
 --- !u!1 &3797623432612076384
 GameObject:
   m_ObjectHideFlags: 0
@@ -1138,6 +1142,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  <OnAmmoChange>k__BackingField:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &3797623432772084531
 GameObject:
   m_ObjectHideFlags: 0
@@ -1294,10 +1301,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39532a9e049944044a4d8c29f71ce170, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  <health>k__BackingField: 500
+  maxHealth: 3
+  <uiHealth>k__BackingField: {fileID: 0}
   <OnDie>k__BackingField:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   <OnGetHit>k__BackingField:
     m_PersistentCalls:
       m_Calls: []
@@ -1396,6 +1416,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weaponRenderer: {fileID: 1181305233}
   weapon: {fileID: 1181305232}
+  uiAmmo: {fileID: 0}
 --- !u!1 &7973571449674119554
 GameObject:
   m_ObjectHideFlags: 0

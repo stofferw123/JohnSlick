@@ -5,6 +5,37 @@ using UnityEngine.Events;
 
 public class Player : MonoBehaviour, IAgent, IHittable
 {
+    [SerializeField]
+    private int maxHealth;
+
+    private int health;
+
+    [field: SerializeField]
+    public int Health { 
+        get => health; 
+        set
+        {
+            Health = Mathf.Clamp(value, 0, maxHealth);
+            uiHealth.UpdateUI(health);
+        } 
+    }
+
+    bool IsDead = false;
+    
+    [field: SerializeField]
+    public UIHealth uiHealth { get; set; }
+
+    [field: SerializeField]
+    public UnityEvent OnDie { get; set; }
+
+    [field: SerializeField]
+    public UnityEvent OnGetHit { get; set; }
+
+    private void Start()
+    {
+        health = maxHealth;
+        uiHealth.Initialize(health);
+    }
     [field: SerializeField]
     public int health { get; set; }
     [field: SerializeField]
