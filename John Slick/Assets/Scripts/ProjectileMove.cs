@@ -15,6 +15,6 @@ public class ProjectileMove : MonoBehaviour
 
     private void OnEnable()
     {
-        rb.velocity = transform.right;
+        rb.velocity = transform.right * MoveSpeed;
     }
 }

@@ -121,7 +121,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee98e03e98905e44daef279baf0fb3c3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  <Distance>k__BackingField: 1
+  <Distance>k__BackingField: 4
 --- !u!1 &535085876
 GameObject:
   m_ObjectHideFlags: 0
@@ -243,7 +243,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee98e03e98905e44daef279baf0fb3c3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  <Distance>k__BackingField: 0.5
+  <Distance>k__BackingField: 0.4
 --- !u!1 &1057929283
 GameObject:
   m_ObjectHideFlags: 0
@@ -428,7 +428,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee98e03e98905e44daef279baf0fb3c3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  <Distance>k__BackingField: 1
+  <Distance>k__BackingField: 2
 --- !u!1 &2089542113
 GameObject:
   m_ObjectHideFlags: 0
@@ -829,6 +829,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <AttackDelay>k__BackingField: 1
+  effect: {fileID: 3462163574139570654, guid: 50b45d9bf496b2c42a6dde9aa20e0bb9, type: 3}
 --- !u!50 &296571670
 Rigidbody2D:
   serializedVersion: 4

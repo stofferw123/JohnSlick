@@ -23,8 +23,11 @@ public class EnemyPathFinder : MonoBehaviour
 
     bool canMove = true;
 
+    AgentRenderer agentRenderer;
+
     private void Start()
     {
+        agentRenderer = GetComponentInChildren<AgentRenderer>();
         target = GameObject.FindGameObjectWithTag("Player").transform;
         rb = GetComponent<Rigidbody2D>();
         seeker = GetComponent<Seeker>();
@@ -62,6 +65,7 @@ public class EnemyPathFinder : MonoBehaviour
 
         Vector2 direction = ((Vector2)path.vectorPath[currentWaypoint] - rb.position).normalized;
         agentMovement.MoveAgent(direction);
+        agentRenderer.FaceDirectionEnemy(direction);
 
         float distance = Vector2.Distance(rb.position, path.vectorPath[currentWaypoint]);
         if (distance < nextWaypointDistance)

@@ -76,7 +76,3 @@ public class AgentMovement : MonoBehaviour
         rb.velocity = currentVelocity * movementDirection.normalized + recoil;
     }
 }
-
-// so we want to move an enemy with a path finder
-
-

@@ -31,7 +31,7 @@ public class Player : MonoBehaviour, IAgent, IHittable
     [field: SerializeField]
     public UnityEvent OnGetHit { get; set; }
 
-    private void Start()
+    private void Awake()
     {
         health = maxHealth;
         uiHealth.Initialize(health);
