@@ -16,11 +16,7 @@ public class Player : MonoBehaviour, IAgent, IHittable
         set
         {
             health = Mathf.Clamp(value, 0, maxHealth);
-<<<<<<< HEAD
-            uiHealth.UpdateUI(health);
-=======
             uiHealth.UpdateUI(Health);
->>>>>>> cfc08f6c8c598c5721e5e0dec8eb9bfdae3e90f2
         } 
     }
 
