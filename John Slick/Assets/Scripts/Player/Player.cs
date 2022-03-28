@@ -8,15 +8,14 @@ public class Player : MonoBehaviour, IAgent, IHittable
     [SerializeField]
     private int maxHealth;
 
-    [field: SerializeField]
     private int health;
 
+    [SerializeField]
     public int Health { 
         get => health; 
         set
         {
-            Debug.Log("Sker der noget mand");
-            health = Mathf.Clamp(value, 0, maxHealth);
+            Health = Mathf.Clamp(value, 0, maxHealth);
             uiHealth.UpdateUI(health);
         } 
     }
@@ -34,23 +33,23 @@ public class Player : MonoBehaviour, IAgent, IHittable
 
     private void Awake()
     {
-        Health = maxHealth;
-        uiHealth.Initialize(Health);
+        health = maxHealth;
+        uiHealth.Initialize(health);
     }
 
     public void GetHit(int damage, GameObject damageDealer)
     {
         if(IsDead) return;
-        Health -= damage; // auch
+        health -= damage; // auch
         OnGetHit?.Invoke();
         
-        if(Health <= 0)
+        if(health <= 0)
         {
             IsDead = true;
             OnDie?.Invoke();
             StartCoroutine(Death());
         }
-        //Debug.Log("Player got hit by: " + damageDealer.name + "for: "+ damage   );
+       // Debug.Log("Player got hit by: " + damageDealer.name);
     }
 
     IEnumerator Death()

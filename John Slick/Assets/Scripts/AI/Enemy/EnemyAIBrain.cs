@@ -11,7 +11,6 @@ public class EnemyAIBrain : MonoBehaviour, IAgentInput
     [field: SerializeField]
     public AIState CurrentState { get; set; }
 
-
     [field: SerializeField]
     public UnityEvent OnFireButtonReleased { get; set; }
     [field: SerializeField]
@@ -24,7 +23,7 @@ public class EnemyAIBrain : MonoBehaviour, IAgentInput
 
     void Awake()
     {
-        Target = GameObject.FindGameObjectWithTag("Player").gameObject;
+        Target = GameObject.FindGameObjectWithTag("Player");
     }
 
     void Update()

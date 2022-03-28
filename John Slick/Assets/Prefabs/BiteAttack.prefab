@@ -4906,4 +4906,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ffef8630140f4dd40bf49e3827740cfb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  interval: 1
+  interval: 0.6

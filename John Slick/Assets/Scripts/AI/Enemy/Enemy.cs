@@ -12,7 +12,7 @@ public class Enemy : MonoBehaviour, IAgent, IHittable
 
     public int Health { get; private set; } = 2;
 
-
+    EnemySpawner enemySpawner;
 
     [field: SerializeField]
     public EnemyAttack enemyAttack { get; set; }
@@ -26,6 +26,8 @@ public class Enemy : MonoBehaviour, IAgent, IHittable
 
     void Awake()
     {
+        enemySpawner = GameObject.Find("EnemySpawner").GetComponent<EnemySpawner>(); // should really use a tag instead
+        OnDie.AddListener(delegate{ enemySpawner.RemoveEnemy(this.gameObject);});
         if (enemyAttack == null)
         {
             enemyAttack = GetComponent<EnemyAttack>();
