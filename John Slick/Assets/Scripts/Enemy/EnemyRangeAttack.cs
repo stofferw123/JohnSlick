@@ -21,5 +21,8 @@ public class EnemyRangeAttack : EnemyAttack
             StartCoroutine("WaitBeforeAttack");
         }
     }
+<<<<<<< HEAD
 
+=======
+>>>>>>> main
 }

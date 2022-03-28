@@ -8,7 +8,10 @@ public class AttackAction : AIAction
     {
         aiMovementData.Direction = Vector2.zero;
         aiMovementData.PointOfInterest = enemyAIBrain.Target.transform.position;
-        enemyAIBrain.Move(aiMovementData.Direction, aiMovementData.PointOfInterest);
+       // enemyAIBrain.Move(aiMovementData.Direction, aiMovementData.PointOfInterest);
+
+        //enemyPathFinder.StopMove(); // we could want to move while attacking, dont see why not
+
         aiActionData.Attack = true;
         enemyAIBrain.Attack();
     }

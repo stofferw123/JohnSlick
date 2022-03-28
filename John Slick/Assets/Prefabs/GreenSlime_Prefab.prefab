@@ -121,7 +121,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee98e03e98905e44daef279baf0fb3c3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  <Distance>k__BackingField: 1
+  <Distance>k__BackingField: 4
 --- !u!1 &535085876
 GameObject:
   m_ObjectHideFlags: 0
@@ -243,7 +243,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee98e03e98905e44daef279baf0fb3c3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  <Distance>k__BackingField: 0.5
+  <Distance>k__BackingField: 0.4
 --- !u!1 &1057929283
 GameObject:
   m_ObjectHideFlags: 0
@@ -304,7 +304,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee98e03e98905e44daef279baf0fb3c3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  <Distance>k__BackingField: 0.3
+  <Distance>k__BackingField: 0.15
 --- !u!1 &1507543139
 GameObject:
   m_ObjectHideFlags: 0
@@ -428,7 +428,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee98e03e98905e44daef279baf0fb3c3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  <Distance>k__BackingField: 1
+  <Distance>k__BackingField: 2
 --- !u!1 &2089542113
 GameObject:
   m_ObjectHideFlags: 0
@@ -503,7 +503,7 @@ GameObject:
   m_Component:
   - component: {fileID: 60222769036038335}
   - component: {fileID: 7373290075439832201}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: MoveCollider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -533,12 +533,12 @@ CapsuleCollider2D:
   m_GameObject: {fileID: 1228511042396016665}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 01f556ffc46312b469087e507fd970cc, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0.0028173118, y: -0.33293504}
-  m_Size: {x: 0.9998627, y: 0.23808873}
+  m_Size: {x: 0.7, y: 0.2}
   m_Direction: 1
 --- !u!1 &6579996008495277275
 GameObject:
@@ -552,6 +552,7 @@ GameObject:
   - component: {fileID: 6579996008495277253}
   - component: {fileID: 5261932448487644854}
   - component: {fileID: 479899308}
+  - component: {fileID: 8666358078278855518}
   m_Layer: 0
   m_Name: Avatar
   m_TagString: Untagged
@@ -611,7 +612,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -522873875
-  m_SortingLayer: 5
+  m_SortingLayer: 4
   m_SortingOrder: 0
   m_Sprite: {fileID: -1088981374488588011, guid: aae5977d1af33b54d99e49711753c497, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -655,6 +656,39 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: afbc38144862e0649a1d20f30fc3ce5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spriteRenderer: {fileID: 6579996008495277253}
+--- !u!114 &8666358078278855518
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6579996008495277275}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7db70e0ea77f5ac47a8f4565a9406397, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_ShadowGroup: 0
+  m_HasRenderer: 1
+  m_UseRendererSilhouette: 1
+  m_CastsShadows: 1
+  m_SelfShadows: 0
+  m_ApplyToSortingLayers: 00000000a31c563713bc87ec753a342aed93d5e08122f4512bc20782
+  m_ShapePath:
+  - {x: -0.4876535, y: -0.48205283, z: 0}
+  - {x: 0.4894973, y: -0.48603076, z: 0}
+  - {x: 0.4867573, y: -0.25855193, z: 0}
+  - {x: 0.3098874, y: -0.06536317, z: 0}
+  - {x: 0.29468822, y: 0.23405023, z: 0}
+  - {x: 0.23275898, y: 0.30104586, z: 0}
+  - {x: -0.22506878, y: 0.30159998, z: 0}
+  - {x: -0.29634964, y: 0.23012365, z: 0}
+  - {x: -0.3259117, y: -0.072897196, z: 0}
+  - {x: -0.48776492, y: -0.26977226, z: 0}
+  m_ShapePathHash: 295116358
+  m_Mesh: {fileID: 0}
+  m_InstanceId: -1754
 --- !u!1 &6579996008866726822
 GameObject:
   m_ObjectHideFlags: 0
@@ -665,11 +699,14 @@ GameObject:
   m_Component:
   - component: {fileID: 6579996008866726823}
   - component: {fileID: 7294277999255615038}
-  - component: {fileID: 2678130501689228422}
   - component: {fileID: 1485006540}
   - component: {fileID: 1485006541}
-  - component: {fileID: 1485006542}
-  m_Layer: 0
+  - component: {fileID: 6518353147820201086}
+  - component: {fileID: 296571670}
+  - component: {fileID: 296571667}
+  - component: {fileID: 296571673}
+  - component: {fileID: 296571675}
+  m_Layer: 8
   m_Name: GreenSlime_Prefab
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -703,33 +740,12 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.5
---- !u!50 &2678130501689228422
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6579996008866726822}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0
-  m_GravityScale: 0
-  m_Material: {fileID: 6200000, guid: 01f556ffc46312b469087e507fd970cc, type: 2}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 4
 --- !u!114 &1485006540
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -743,7 +759,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <EnemyData>k__BackingField: {fileID: 11400000, guid: f44875880464e3946859faa739b4b530, type: 2}
-  <health>k__BackingField: 2
+  <Health>k__BackingField: 2
+  <enemyAttack>k__BackingField: {fileID: 0}
   <OnGetHit>k__BackingField:
     m_PersistentCalls:
       m_Calls: []
@@ -769,14 +786,11 @@ MonoBehaviour:
       m_Calls: []
   <OnFireButtonPressed>k__BackingField:
     m_PersistentCalls:
-      m_Calls: []
-  <OnMovementKeyPressed>k__BackingField:
-    m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1485006542}
-        m_TargetAssemblyTypeName: AgentMovement, Assembly-CSharp
-        m_MethodName: MoveAgent
-        m_Mode: 0
+      - m_Target: {fileID: 1485006540}
+        m_TargetAssemblyTypeName: Enemy, Assembly-CSharp
+        m_MethodName: PerformAttack
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -785,6 +799,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  <OnMovementKeyPressed>k__BackingField:
+    m_PersistentCalls:
+      m_Calls: []
   <OnPointerPositionChange>k__BackingField:
     m_PersistentCalls:
       m_Calls:
@@ -800,7 +817,56 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &1485006542
+--- !u!114 &6518353147820201086
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6579996008866726822}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: df966d5ea7fc44748b21f9ba079a3903, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  <AttackDelay>k__BackingField: 1
+  effect: {fileID: 3462163574139570654, guid: 50b45d9bf496b2c42a6dde9aa20e0bb9, type: 3}
+--- !u!50 &296571670
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6579996008866726822}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0
+  m_GravityScale: 0
+  m_Material: {fileID: 6200000, guid: 01f556ffc46312b469087e507fd970cc, type: 2}
+  m_Interpolate: 1
+  m_SleepingMode: 1
+  m_CollisionDetection: 1
+  m_Constraints: 4
+--- !u!114 &296571667
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6579996008866726822}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 061f2a1f630b8b948ba039cf050f062a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  agentMovement: {fileID: 296571673}
+  nextWaypointDistance: 0.1
+--- !u!114 &296571673
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -815,4 +881,36 @@ MonoBehaviour:
   MovementData: {fileID: 11400000, guid: f8e19ef49165008478f29f5839540cda, type: 2}
   currentVelocity: 0
   recoil: {x: 0, y: 0}
+  <OnVelocityChange>k__BackingField:
+    m_PersistentCalls:
+      m_Calls: []
   recoilDuration: 0
+  recoilStrength: 0
+--- !u!114 &296571675
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6579996008866726822}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 373b52eb9bf8c40f785bb6947a1aee66, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  version: 1
+  drawGizmos: 1
+  detailedGizmos: 0
+  startEndModifier:
+    addPoints: 0
+    exactStartPoint: 3
+    exactEndPoint: 3
+    useRaycasting: 0
+    mask:
+      serializedVersion: 2
+      m_Bits: 4294967295
+    useGraphRaycasting: 0
+  traversableTags: -1
+  tagPenalties: 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+  graphMask:
+    value: -1
