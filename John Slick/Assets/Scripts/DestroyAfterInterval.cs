@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class DisableAfterInterval : MonoBehaviour
+public class DestroyAfterInterval : MonoBehaviour
 {
     public float interval;
 
@@ -12,11 +12,11 @@ public class DisableAfterInterval : MonoBehaviour
         {
             CancelInvoke();
         }
-        Invoke("Disable", interval);
+        Invoke("Destroy", interval);
     }
 
-    void Disable()
+    void Destroy()
     {
-        this.gameObject.SetActive(false);
+        Destroy(this.gameObject);
     }
 }
