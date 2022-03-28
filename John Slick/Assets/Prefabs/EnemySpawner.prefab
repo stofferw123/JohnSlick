@@ -203,7 +203,7 @@ MonoBehaviour:
   - {fileID: 685562112699025631, guid: b054ab7881b08734985db27772ce9506, type: 3}
   Boss: {fileID: 6240466038640164999, guid: a9a5aff4a82ba5b4cbc23474394e623c, type: 3}
   spawnStartTime: 0
-  spawnRepeatRate: 1
+  spawnRepeatRate: 5
   SpawnPoints:
   - {fileID: 3826150663750703292}
   - {fileID: 3826150663401088516}
@@ -211,5 +211,5 @@ MonoBehaviour:
   - {fileID: 3826150662995853307}
   BossSpawnPoint: {fileID: 3826150662987274298}
   AllEnemies: []
-  EnemyWaves: 10
-  EnemySpawnPrWave: 2
+  EnemyWaves: 5
+  EnemySpawnPrWave: 1

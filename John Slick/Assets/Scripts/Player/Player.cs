@@ -15,7 +15,7 @@ public class Player : MonoBehaviour, IAgent, IHittable
         get => health; 
         set
         {
-            Health = Mathf.Clamp(value, 0, maxHealth);
+            health = Mathf.Clamp(value, 0, maxHealth);
             uiHealth.UpdateUI(health);
         } 
     }
@@ -40,10 +40,10 @@ public class Player : MonoBehaviour, IAgent, IHittable
     public void GetHit(int damage, GameObject damageDealer)
     {
         if(IsDead) return;
-        health -= damage; // auch
+        Health -= damage; // auch
         OnGetHit?.Invoke();
         
-        if(health <= 0)
+        if(Health <= 0)
         {
             IsDead = true;
             OnDie?.Invoke();
