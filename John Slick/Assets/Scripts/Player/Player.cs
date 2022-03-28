@@ -16,7 +16,11 @@ public class Player : MonoBehaviour, IAgent, IHittable
         set
         {
             health = Mathf.Clamp(value, 0, maxHealth);
+<<<<<<< HEAD
             uiHealth.UpdateUI(health);
+=======
+            uiHealth.UpdateUI(Health);
+>>>>>>> cfc08f6c8c598c5721e5e0dec8eb9bfdae3e90f2
         } 
     }
 
@@ -33,8 +37,8 @@ public class Player : MonoBehaviour, IAgent, IHittable
 
     private void Awake()
     {
-        health = maxHealth;
-        uiHealth.Initialize(health);
+        Health = maxHealth;
+        uiHealth.Initialize(Health);
     }
 
     public void GetHit(int damage, GameObject damageDealer)

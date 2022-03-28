@@ -13,11 +13,11 @@ GameObject:
   - component: {fileID: 1015228518847979564}
   - component: {fileID: 1015228518847979563}
   - component: {fileID: 7005808}
-  - component: {fileID: 7005809}
   - component: {fileID: 1935969476347038697}
   - component: {fileID: 4478598118811805703}
   - component: {fileID: 677381242136406882}
-  m_Layer: 0
+  - component: {fileID: 8163414292387080205}
+  m_Layer: 14
   m_Name: EnemyProjectile
   m_TagString: Projectile
   m_Icon: {fileID: 0}
@@ -136,20 +136,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 04f07197e33b00342898148c039c0952, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dmg: 2
---- !u!114 &7005809
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1015228518847979562}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ffef8630140f4dd40bf49e3827740cfb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  interval: 5
+  dmg: 0
 --- !u!58 &1935969476347038697
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -4938,6 +4925,19 @@ ParticleSystemRenderer:
   m_Mesh2: {fileID: 0}
   m_Mesh3: {fileID: 0}
   m_MaskInteraction: 0
+--- !u!114 &8163414292387080205
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1015228518847979562}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1eabd40b4478d1b40a5f0326a3dc18bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  <BulletData>k__BackingField: {fileID: 11400000, guid: 05a4dd30a7ee2e44f9ef9ab082d26dfd, type: 2}
 --- !u!1 &2037817791884265827
 GameObject:
   m_ObjectHideFlags: 0
@@ -4948,7 +4948,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2284737026288122391}
   - component: {fileID: 5454944784227312613}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: Light
   m_TagString: Untagged
   m_Icon: {fileID: 0}

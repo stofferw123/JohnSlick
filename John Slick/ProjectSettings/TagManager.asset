@@ -13,14 +13,14 @@ TagManager:
   - Water
   - UI
   - Player
-  - Bullets
+  - PlayerBullet
   - Enemy
   - Obstacle
   - EnemyMovementCollider
   - PlayerMovementCollider
   - BulletWallCollider
   - WallCollider
-  - 
+  - EnemyBullet
   - 
   - 
   - 
