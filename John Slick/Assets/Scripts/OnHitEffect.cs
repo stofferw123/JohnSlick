@@ -10,6 +10,6 @@ public class OnHitEffect : MonoBehaviour
     {
         if(!other.gameObject.CompareTag("Player")) return;
         gameObject.SetActive(false);
-        other.gameObject.GetComponentInParent<IHittable>().GetHit(dmg, this.gameObject);
+        other.gameObject?.GetComponentInParent<IHittable>()?.GetHit(dmg, this.gameObject);
     }
 }

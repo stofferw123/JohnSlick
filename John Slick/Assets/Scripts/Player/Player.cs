@@ -10,7 +10,7 @@ public class Player : MonoBehaviour, IAgent, IHittable
 
     private int health;
 
-    [field: SerializeField]
+    [SerializeField]
     public int Health { 
         get => health; 
         set

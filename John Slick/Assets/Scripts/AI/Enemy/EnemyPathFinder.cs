@@ -34,9 +34,9 @@ public class EnemyPathFinder : MonoBehaviour
 
         InvokeRepeating("UpdatePath", 0, 0.15f);
     }
-
     void UpdatePath()
     {
+        if(!target) return;
         seeker.StartPath(rb.position, target.transform.position, OnPathComplete);
     }
 
