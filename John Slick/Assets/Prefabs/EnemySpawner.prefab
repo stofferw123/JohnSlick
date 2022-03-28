@@ -212,4 +212,4 @@ MonoBehaviour:
   BossSpawnPoint: {fileID: 3826150662987274298}
   AllEnemies: []
   EnemyWaves: 10
-  EnemySpawnPrWave: 1
+  EnemySpawnPrWave: 2
