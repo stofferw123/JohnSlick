@@ -25,4 +25,9 @@ public class PlayerWeapon : AgentWeapon
             weapon.Ammo += amount;
         }
     }
+
+    public void SetWeapon(Weapon _weapon)
+    {
+        weapon = _weapon;
+    }
 }

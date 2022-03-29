@@ -41,15 +41,13 @@ public class RegularBullet : Bullet
         Destroy(gameObject);
     }
 
-    private void HitEnemy()
+    private void HitEnemy() // never using these?
     {
-        Debug.Log("Hitting Enemy");
+       // Debug.Log("Hitting Enemy");
     }
 
     private void HitObstacle()
     {
-        Debug.Log("Hitting Obstacle");
+       // Debug.Log("Hitting Obstacle");
     }
-
-
 }

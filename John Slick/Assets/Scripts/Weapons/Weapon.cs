@@ -41,8 +41,14 @@ public class Weapon : MonoBehaviour
     [field: SerializeField]
     public UnityEvent<int> OnAmmoChange { get; set; }
 
+    [SerializeField]
+    WeaponSwapper swapper;
+
+    AgentMovement playerMove;
+
     private void Start()
     {
+        playerMove = GameObject.FindGameObjectWithTag("Player").GetComponent<AgentMovement>();
         Ammo = weaponData.AmmoCapacity;
     }
 
@@ -58,7 +64,17 @@ public class Weapon : MonoBehaviour
 
     public void Reload(int ammo)
     {
-        Ammo += ammo;
+        Ammo = weaponData.AmmoCapacity;
+        //Ammo += ammo;
+    }
+
+    private void OnEnable()
+    {
+        StopAllCoroutines();
+        CancelInvoke();
+        reloadCoroutine = false;
+        isShooting = false;
+        Reload(0);
     }
 
     private void Update()
@@ -74,6 +90,7 @@ public class Weapon : MonoBehaviour
             {
                 Ammo--;
                 OnShoot?.Invoke();
+                playerMove.DoRecoil();
                 for (int i = 0; i < weaponData.GetBulletCountToSpawn(); i++)
                 {
                     ShootBullet();
@@ -90,12 +107,21 @@ public class Weapon : MonoBehaviour
         }
     }
 
+    void SwitchDelay()
+    {
+        swapper.Switch();
+    }
+
     private void FinishShooting()
     {
         StartCoroutine(DelayNextShootCoroutine());
         if (weaponData.AutomaticFire == false)
         {
             isShooting = false;
+        }
+        if (Ammo <= 0)
+        {
+            Invoke("SwitchDelay", 1); 
         }
     }
 

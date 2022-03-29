@@ -28,7 +28,7 @@ public class EnemyPathFinder : MonoBehaviour
     private void Start()
     {
         agentRenderer = GetComponentInChildren<AgentRenderer>();
-        target = GameObject.FindGameObjectWithTag("Player").transform;
+        target = GameObject.FindGameObjectWithTag("Player")?.transform;
         rb = GetComponent<Rigidbody2D>();
         seeker = GetComponent<Seeker>();
 

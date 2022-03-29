@@ -52,12 +52,12 @@ public class EnemySpawner : MonoBehaviour
 
     void SpawnEnemies()
     {
-        EnemyWaves--;
         if (EnemyWaves <= 0)
         {
             CancelInvoke();
             return;
         }
+        EnemyWaves--;
         Invoke("SpawnEnemies", spawnRepeatRate);
         SpawnEnemy(EnemySpawnPrWave);
     }

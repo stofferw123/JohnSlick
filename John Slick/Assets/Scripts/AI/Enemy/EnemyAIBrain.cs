@@ -32,7 +32,10 @@ public class EnemyAIBrain : MonoBehaviour, IAgentInput
         {
             OnMovementKeyPressed?.Invoke(Vector2.zero);
         }
-        CurrentState.UpdateState();
+        else
+        {
+            CurrentState.UpdateState(); // do we even want to update state if there is no target?, we will never not have the player in the scene
+        }
     }
 
     public void Attack()

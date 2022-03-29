@@ -57,10 +57,16 @@ public class AgentMovement : MonoBehaviour
         return Mathf.Clamp(currentVelocity, 0, MovementData.maxSpeed);
     }
 
-    public void DoRecoil(Vector2 recoilAmount) // easier to call from another script than a coroutine
+    public void DoRecoil() // easier to call from another script than a coroutine
     {
+        Vector3 mousePos = Input.mousePosition;
+        mousePos.z = Camera.main.nearClipPlane;
+        var mouseInWorldSpace = Camera.main.ScreenToWorldPoint(mousePos);
+
+        Vector2 v = mouseInWorldSpace - transform.position;
+
         StopAllCoroutines();
-        StartCoroutine("Recoil", recoilAmount);
+        StartCoroutine("Recoil", v * -1);
     }
 
     IEnumerator Recoil(Vector2 recoilAmount) // question is if this shouldn't sit somewhere else

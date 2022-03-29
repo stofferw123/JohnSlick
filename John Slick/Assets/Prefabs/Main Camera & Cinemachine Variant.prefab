@@ -73,12 +73,45 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 4473429025261643312, guid: c0ab9893595e40c4eac9579ccfdc28c3, type: 3}
+    - {fileID: 4093138641302344391, guid: c0ab9893595e40c4eac9579ccfdc28c3, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: c0ab9893595e40c4eac9579ccfdc28c3, type: 3}
+--- !u!1 &737959286895514956 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4093138641302344389, guid: c0ab9893595e40c4eac9579ccfdc28c3, type: 3}
+  m_PrefabInstance: {fileID: 3670572130239235977}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &929063242091674184 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4473429024276020673, guid: c0ab9893595e40c4eac9579ccfdc28c3, type: 3}
+  m_PrefabInstance: {fileID: 3670572130239235977}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45e653bab7fb20e499bda25e1b646fea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &929063243119305147 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4473429025261643314, guid: c0ab9893595e40c4eac9579ccfdc28c3, type: 3}
   m_PrefabInstance: {fileID: 3670572130239235977}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &8118585316950651139
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 737959286895514956}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70fd4e714576378488e3ebfe9b397394, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cinemachineCamera: {fileID: 929063242091674184}
+  amplitude: 0.25
+  intensity: 1
+  duration: 0.2
 --- !u!114 &860509723
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -122,3 +155,20 @@ MonoBehaviour:
   m_MaximumFOV: 60
   m_MinimumOrthoSize: 1
   m_MaximumOrthoSize: 5000
+--- !u!114 &7714698514304874466
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 929063243119305147}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68bb026fafb42b14791938953eaace77, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_NoiseProfile: {fileID: 11400000, guid: 69ce8388f6785dd4c8c39915efece2f4, type: 2}
+  m_PivotOffset: {x: 0, y: 0, z: 0}
+  m_AmplitudeGain: 0
+  m_FrequencyGain: 0
+  mNoiseOffsets: {x: 0, y: 0, z: 0}

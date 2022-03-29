@@ -54,8 +54,9 @@ public class Enemy : MonoBehaviour, IAgent, IHittable
 
     void Die() // do any dying effect here
     {
-        StopAllCoroutines();
-        StartCoroutine("WaitToDie");
+        Destroy(gameObject);
+        //StopAllCoroutines();
+        //StartCoroutine("WaitToDie");
     }
 
     IEnumerator WaitToDie()

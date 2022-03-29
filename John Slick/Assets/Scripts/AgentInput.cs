@@ -36,14 +36,6 @@ public class AgentInput : MonoBehaviour
     {
         if (Input.GetAxisRaw("Fire1") > 0)
         {
-            Vector3 mousePos = Input.mousePosition;
-            mousePos.z = mainCamera.nearClipPlane;
-            var mouseInWorldSpace = mainCamera.ScreenToWorldPoint(mousePos);
-
-            Vector2 v = mouseInWorldSpace - transform.position;
-
-            GetComponent<AgentMovement>().DoRecoil(v.normalized * -1);
-
             if (fireButtonDown == false)
             {
                 fireButtonDown = true;
