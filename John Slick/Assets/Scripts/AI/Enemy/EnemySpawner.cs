@@ -24,6 +24,11 @@ public class EnemySpawner : MonoBehaviour
     [SerializeField]
     int EnemyWaves, EnemySpawnPrWave;
 
+    bool BossSpawned = false;
+
+    [SerializeField]
+    GameObject WinText;
+
     private void Start()
     {
         AllEnemies = new List<GameObject>();
@@ -39,7 +44,13 @@ public class EnemySpawner : MonoBehaviour
 
     void CheckEnemyCount()
     {
-        if (AllEnemies.Count == 0)
+        if (BossSpawned)
+        {
+            WinText.SetActive(true);
+            return;
+        }
+
+        if (AllEnemies.Count == 0 && EnemyWaves <= 0)
         {
             Invoke("SpawnBoss", 3);
         }
@@ -47,6 +58,7 @@ public class EnemySpawner : MonoBehaviour
 
     void SpawnBoss()
     {
+        BossSpawned = true;
         Instantiate(Boss, BossSpawnPoint.transform.position, Quaternion.identity);
     }
 
