@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class DestroyAfterInterval : MonoBehaviour
 {
-    public float interval;
-
-    void OnEnable()
+    [SerializeField]
+    float interval;
+    void Start()
     {
         if (IsInvoking())
         {
@@ -14,7 +14,6 @@ public class DestroyAfterInterval : MonoBehaviour
         }
         Invoke("Destroy", interval);
     }
-
     void Destroy()
     {
         Destroy(this.gameObject);

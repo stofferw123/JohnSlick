@@ -4871,7 +4871,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8101371460464123010}
-  - component: {fileID: 5671267072159051627}
+  - component: {fileID: 4386501512191668043}
   m_Layer: 0
   m_Name: BiteAttack
   m_TagString: Untagged
@@ -4894,7 +4894,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &5671267072159051627
+--- !u!114 &4386501512191668043
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -4903,7 +4903,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 3462163574139570654}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ffef8630140f4dd40bf49e3827740cfb, type: 3}
+  m_Script: {fileID: 11500000, guid: 3782ec70a0262744585fcb1ec81ef1b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  interval: 0.6
+  interval: 0.2

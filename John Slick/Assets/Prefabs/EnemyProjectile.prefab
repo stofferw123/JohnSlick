@@ -17,6 +17,7 @@ GameObject:
   - component: {fileID: 4478598118811805703}
   - component: {fileID: 677381242136406882}
   - component: {fileID: 8163414292387080205}
+  - component: {fileID: 4999091167875767921}
   m_Layer: 14
   m_Name: EnemyProjectile
   m_TagString: Projectile
@@ -4938,6 +4939,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <BulletData>k__BackingField: {fileID: 11400000, guid: 05a4dd30a7ee2e44f9ef9ab082d26dfd, type: 2}
+--- !u!114 &4999091167875767921
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1015228518847979562}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3782ec70a0262744585fcb1ec81ef1b7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interval: 4
 --- !u!1 &2037817791884265827
 GameObject:
   m_ObjectHideFlags: 0
