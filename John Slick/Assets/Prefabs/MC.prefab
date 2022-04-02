@@ -1493,7 +1493,11 @@ MonoBehaviour:
   - {x: -0.29438293, y: 0.59962547, z: 0}
   m_ShapePathHash: -1669586396
   m_Mesh: {fileID: 0}
+<<<<<<< HEAD
   m_InstanceId: -58060
+=======
+  m_InstanceId: -9256
+>>>>>>> 28129a7661aad62642af7e84cc1fdc88e07ab927
 --- !u!1 &8291805924370473492
 GameObject:
   m_ObjectHideFlags: 0
@@ -1512,7 +1516,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &8291805924370473491
 Transform:
   m_ObjectHideFlags: 0
