@@ -2884,7 +2884,7 @@ PrefabInstance:
       objectReference: {fileID: 235256120}
     - target: {fileID: 3826150664165621311, guid: db51ba7521ad70a48a61e4623a7b180d, type: 3}
       propertyPath: EnemyWaves
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3826150664165621311, guid: db51ba7521ad70a48a61e4623a7b180d, type: 3}
       propertyPath: spawnRepeatRate
@@ -4310,7 +4310,8 @@ MonoBehaviour:
   MainWeapon: {fileID: 21300000, guid: dec948719747f2846ba3f6a0151a9eb2, type: 3}
   UpcommingWeapon: {fileID: 21300000, guid: db73e4d92cd2baf469860b731ef85318, type: 3}
   LastWeapon: {fileID: 328734368135709671, guid: e9c2404990371d949bef341183788270, type: 3}
-  WeaonPanel: {fileID: 1702182452}
+  images: []
+  WeaponPanel: {fileID: 1702182452}
 --- !u!1001 &1710077877
 PrefabInstance:
   m_ObjectHideFlags: 0

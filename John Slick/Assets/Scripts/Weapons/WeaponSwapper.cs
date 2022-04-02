@@ -23,11 +23,6 @@ public class WeaponSwapper : MonoBehaviour
         currentWeaponIndex = weapons.IndexOf(weapons.FirstOrDefault(x => x.activeInHierarchy == true));
     }
 
-    //private void Update() // for testing
-    //{
-    //    if(Input.GetKeyDown(KeyCode.G)) Switch();
-    //}
-
     public void Switch()
     {
         currentWeaponIndex++;
@@ -46,6 +41,6 @@ public class WeaponSwapper : MonoBehaviour
                 weapons[i].SetActive(false);
         }
 
-        playerWeapon.SetWeapon(weapons[currentWeaponIndex].GetComponent<Weapon>());
+        playerWeapon.SetWeapon(weapons[currentWeaponIndex].GetComponent<Weapon>(), currentWeaponIndex);
     }
 }
