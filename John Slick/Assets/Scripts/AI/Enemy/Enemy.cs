@@ -41,14 +41,16 @@ public class Enemy : MonoBehaviour, IAgent, IHittable
 
     public void GetHit(int damage = 1, GameObject damageDealer = null)
     {
-        OnGetHit?.Invoke();
         if (IsDead) return;
         if (--Health <= 0)
-
         {
             IsDead = true;    // public death flag so you know
             OnDie?.Invoke();
             Die();
+        }
+        else
+        {
+            OnGetHit?.Invoke();
         }
     }
 
