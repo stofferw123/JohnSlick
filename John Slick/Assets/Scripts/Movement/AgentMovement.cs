@@ -18,8 +18,8 @@ public class AgentMovement : MonoBehaviour
 
     [SerializeField]
     [Range(0.05f, 1)]
-    float recoilDuration; 
-    
+    float recoilDuration;
+
     [SerializeField]
     [Range(0.05f, 3)]
     float recoilStrength;
@@ -37,8 +37,8 @@ public class AgentMovement : MonoBehaviour
     {
         if (movementInput.magnitude > 0)
         {
-            if (Vector2.Dot(movementInput.normalized, movementDirection) < 0)
-                currentVelocity = 0;
+            //if (Vector2.Dot(movementInput.normalized, movementDirection) < 0)
+            //    currentVelocity = 0;
             movementDirection = movementInput.normalized;
         }
         currentVelocity = CalculateSpeed(movementInput);
