@@ -993,7 +993,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   agentMovement: {fileID: 9163863304828976775}
-  nextWaypointDistance: 0.3
+  nextWaypointDistance: 0.1
 --- !u!1 &9163863305285322487
 GameObject:
   m_ObjectHideFlags: 0
@@ -1004,7 +1004,7 @@ GameObject:
   m_Component:
   - component: {fileID: 9163863305285322486}
   - component: {fileID: 9163863305285322481}
-  m_Layer: 8
+  m_Layer: 10
   m_Name: MovementCollider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1196,4 +1196,4 @@ MonoBehaviour:
   - {x: -0.5150099, y: 0.6896795, z: 0}
   m_ShapePathHash: -642394555
   m_Mesh: {fileID: 0}
-  m_InstanceId: -974078
+  m_InstanceId: -9134

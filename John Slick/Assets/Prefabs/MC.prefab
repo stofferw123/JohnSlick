@@ -878,7 +878,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39532a9e049944044a4d8c29f71ce170, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 5
+  maxHealth: 60
   <uiHealth>k__BackingField: {fileID: 0}
   <OnDie>k__BackingField:
     m_PersistentCalls:

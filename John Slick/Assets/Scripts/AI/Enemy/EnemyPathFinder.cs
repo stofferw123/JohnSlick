@@ -32,7 +32,9 @@ public class EnemyPathFinder : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         seeker = GetComponent<Seeker>();
 
-        InvokeRepeating("UpdatePath", 0, 0.15f);
+        //InvokeRepeating("UpdatePath", 0, 0.15f);
+        InvokeRepeating("UpdatePath", 1, 0.75f);
+
     }
     void UpdatePath()
     {
