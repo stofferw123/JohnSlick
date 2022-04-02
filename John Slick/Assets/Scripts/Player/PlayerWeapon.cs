@@ -7,10 +7,14 @@ public class PlayerWeapon : AgentWeapon
     [SerializeField]
     private UIAmmo uiAmmo = null;
 
+    [SerializeField]
+    private UIWeaponIcons uiWeaponIcons = null;
+
     public bool AmmoFull { get => weapon != null && weapon.AmmoFull; }
 
     private void Start()
     {
+        //UIWeaponIcons
         if (weapon != null)
         {
             weapon.OnAmmoChange.AddListener(uiAmmo.UpdateBulletsText);
