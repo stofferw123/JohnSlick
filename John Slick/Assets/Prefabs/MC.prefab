@@ -1,5 +1,149 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &359254873
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 359254876}
+  - component: {fileID: 359254875}
+  - component: {fileID: 359254874}
+  m_Layer: 6
+  m_Name: AgentSounds
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &359254876
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 359254873}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 8291805924030418733}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &359254875
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 359254873}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!114 &359254874
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 359254873}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d433165aa246d0d479ceabc489da3005, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pitchRandomness: 0.05
+  hitClip: {fileID: 8300000, guid: 6482b3a70c8c40144b88973df7234285, type: 3}
+  deathClip: {fileID: 8300000, guid: 1ed93f71ba6737742a9c91a4a7809f28, type: 3}
+  voiceLineClip: {fileID: 0}
 --- !u!1 &8291805922741002265
 GameObject:
   m_ObjectHideFlags: 0
@@ -141,7 +285,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pitchRandomness: 0.05
-  shootBulletClip: {fileID: 8300000, guid: 35588da59e8c48a43a9dcaf03ba36410, type: 3}
+  shootBulletClip: {fileID: 8300000, guid: 430a258153e38304cbe835c9c78906e1, type: 3}
   outOfBulletsClip: {fileID: 8300000, guid: 56c260531cb172d40b5f6ed2f0f3a601, type: 3}
 --- !u!1 &8291805923105461049
 GameObject:
@@ -287,7 +431,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &8291805923564550480
 Transform:
   m_ObjectHideFlags: 0
@@ -589,6 +733,7 @@ GameObject:
   - component: {fileID: 8291805923658928329}
   - component: {fileID: 8291805923658928330}
   - component: {fileID: 8291805923658928309}
+  - component: {fileID: 697134268829766283}
   m_Layer: 6
   m_Name: MC
   m_TagString: Player
@@ -611,6 +756,7 @@ Transform:
   - {fileID: 8291805924309660736}
   - {fileID: 8291805924616626053}
   - {fileID: 8291805923143024517}
+  - {fileID: 359254876}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -731,7 +877,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39532a9e049944044a4d8c29f71ce170, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 5
+  maxHealth: 1
   <uiHealth>k__BackingField: {fileID: 0}
   <OnDie>k__BackingField:
     m_PersistentCalls:
@@ -760,12 +906,36 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 359254874}
+        m_TargetAssemblyTypeName: AgentSounds, Assembly-CSharp
+        m_MethodName: PlayDeathSound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
   <OnGetHit>k__BackingField:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: CinemachineCameraShake, Assembly-CSharp
         m_MethodName: CreateFeedback
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 359254874}
+        m_TargetAssemblyTypeName: AgentSounds, Assembly-CSharp
+        m_MethodName: PlayHitSound
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -836,6 +1006,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   effect: {fileID: 426626187352418449, guid: 3b057d2f3390db446b35ecc757739a33, type: 3}
+--- !u!114 &697134268829766283
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8291805923658928331}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c27812f522614f04cb14cd32b72d4624, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Sound: {fileID: 3069949535620905313, guid: 82844527429733249898b1cbf51f7757, type: 3}
 --- !u!1 &8291805923971729299
 GameObject:
   m_ObjectHideFlags: 0
@@ -1310,7 +1493,7 @@ MonoBehaviour:
   - {x: -0.29438293, y: 0.59962547, z: 0}
   m_ShapePathHash: -1669586396
   m_Mesh: {fileID: 0}
-  m_InstanceId: -596752
+  m_InstanceId: -58060
 --- !u!1 &8291805924370473492
 GameObject:
   m_ObjectHideFlags: 0
@@ -1632,12 +1815,12 @@ GameObject:
   - component: {fileID: 8291805924541677203}
   - component: {fileID: 8291805924541677204}
   m_Layer: 6
-  m_Name: Shotgun (1)
+  m_Name: Sniper
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &8291805924541677205
 Transform:
   m_ObjectHideFlags: 0
@@ -1646,8 +1829,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8291805924541677206}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.52, y: 0.06, z: 0}
-  m_LocalScale: {x: 0.8, y: 0.8, z: 1}
+  m_LocalPosition: {x: 0.68, y: 0.09, z: 0}
+  m_LocalScale: {x: 0.31, y: 0.3, z: 1}
   m_Children:
   - {fileID: 8291805924678260588}
   - {fileID: 8291805922741002264}
@@ -1695,9 +1878,9 @@ SpriteRenderer:
   m_SortingLayerID: 708065909
   m_SortingLayer: 3
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: db73e4d92cd2baf469860b731ef85318, type: 3}
+  m_Sprite: {fileID: 328734368135709671, guid: e9c2404990371d949bef341183788270, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
+  m_FlipX: 1
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 1.3, y: 0.33333334}
@@ -1733,7 +1916,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   muzzle: {fileID: 8291805924678260590}
   ammo: 8
-  weaponData: {fileID: 11400000, guid: 2ad67155936c21b4a9f77871dc54d9f6, type: 2}
+  weaponData: {fileID: 11400000, guid: cc0d088eed3c5ff4fb7376a42ec8a027, type: 2}
   reloadCoroutine: 0
   <OnShoot>k__BackingField:
     m_PersistentCalls:
@@ -1996,7 +2179,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8291805924678260590}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.36, y: -0.05, z: 0}
+  m_LocalPosition: {x: -2.95, y: -0.31, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 8291805924541677205}

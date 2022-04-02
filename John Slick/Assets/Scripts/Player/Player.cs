@@ -55,6 +55,11 @@ public class Player : MonoBehaviour, IAgent, IHittable
     IEnumerator Death()
     {
         this.gameObject.SetActive(false);
+        var v = transform.GetChild(4).gameObject;
+        v.SetActive(true);
+
+        
+
         yield return new WaitForSeconds(0.2f); // should probably just reload scene here instead  
         // do something
     }
