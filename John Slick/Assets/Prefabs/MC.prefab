@@ -141,7 +141,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pitchRandomness: 0.05
-  shootBulletClip: {fileID: 8300000, guid: 35588da59e8c48a43a9dcaf03ba36410, type: 3}
+  shootBulletClip: {fileID: 8300000, guid: 430a258153e38304cbe835c9c78906e1, type: 3}
   outOfBulletsClip: {fileID: 8300000, guid: 56c260531cb172d40b5f6ed2f0f3a601, type: 3}
 --- !u!1 &8291805923105461049
 GameObject:
@@ -287,7 +287,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &8291805923564550480
 Transform:
   m_ObjectHideFlags: 0
@@ -1310,7 +1310,7 @@ MonoBehaviour:
   - {x: -0.29438293, y: 0.59962547, z: 0}
   m_ShapePathHash: -1669586396
   m_Mesh: {fileID: 0}
-  m_InstanceId: -596752
+  m_InstanceId: -9256
 --- !u!1 &8291805924370473492
 GameObject:
   m_ObjectHideFlags: 0
@@ -1329,7 +1329,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &8291805924370473491
 Transform:
   m_ObjectHideFlags: 0
@@ -1632,7 +1632,7 @@ GameObject:
   - component: {fileID: 8291805924541677203}
   - component: {fileID: 8291805924541677204}
   m_Layer: 6
-  m_Name: Shotgun (1)
+  m_Name: Sniper
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1646,8 +1646,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8291805924541677206}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.52, y: 0.06, z: 0}
-  m_LocalScale: {x: 0.8, y: 0.8, z: 1}
+  m_LocalPosition: {x: 0.68, y: 0.09, z: 0}
+  m_LocalScale: {x: 0.31, y: 0.3, z: 1}
   m_Children:
   - {fileID: 8291805924678260588}
   - {fileID: 8291805922741002264}
@@ -1695,9 +1695,9 @@ SpriteRenderer:
   m_SortingLayerID: 708065909
   m_SortingLayer: 3
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: db73e4d92cd2baf469860b731ef85318, type: 3}
+  m_Sprite: {fileID: 328734368135709671, guid: e9c2404990371d949bef341183788270, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
+  m_FlipX: 1
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 1.3, y: 0.33333334}
@@ -1733,7 +1733,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   muzzle: {fileID: 8291805924678260590}
   ammo: 8
-  weaponData: {fileID: 11400000, guid: 2ad67155936c21b4a9f77871dc54d9f6, type: 2}
+  weaponData: {fileID: 11400000, guid: cc0d088eed3c5ff4fb7376a42ec8a027, type: 2}
   reloadCoroutine: 0
   <OnShoot>k__BackingField:
     m_PersistentCalls:
@@ -1996,7 +1996,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8291805924678260590}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.36, y: -0.05, z: 0}
+  m_LocalPosition: {x: -2.95, y: -0.31, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 8291805924541677205}
