@@ -14,12 +14,12 @@ public class PlayerWeapon : AgentWeapon
 
     private void Start()
     {
-        //UIWeaponIcons
-        if (weapon != null)
-        {
-            weapon.OnAmmoChange.AddListener(uiAmmo.UpdateBulletsText);
-            uiAmmo.UpdateBulletsText(weapon.Ammo);
-        }
+        //uiWeaponIcons
+        //if (weapon != null)
+        //{
+        //    weapon.OnAmmoChange.AddListener(uiAmmo.UpdateBulletsText);
+        //    uiAmmo.UpdateBulletsText(weapon.Ammo);
+        //}
     }
 
     public void AddAmmo(int amount)
