@@ -35,6 +35,11 @@ public class PierceBullet : Bullet
             HitObstacle();
             Destroy(gameObject);
         }
+        else if (collision.gameObject.layer == LayerMask.NameToLayer("BulletWallCollider"))
+        {
+            HitObstacle();
+            Destroy(gameObject);
+        }
         else if (collision.gameObject.layer == LayerMask.NameToLayer("Enemy"))
         {
             HitEnemy();

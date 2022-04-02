@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: BigDudeOrcMovement
   m_EditorClassIdentifier: 
   maxSpeed: 6
-  acceleration: 0.5
-  deacceleration: 0.1
+  acceleration: 1.1
+  deacceleration: 0.2
