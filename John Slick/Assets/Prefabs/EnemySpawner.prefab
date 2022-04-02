@@ -1,5 +1,35 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &563406516
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 563406517}
+  m_Layer: 0
+  m_Name: SpawnPoint (4)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &563406517
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 563406516}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 2.627, y: 0.108, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 3826150664165621310}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &3826150662987274299
 GameObject:
   m_ObjectHideFlags: 0
@@ -24,7 +54,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3826150662987274299}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.174, y: -0.097, z: 0}
+  m_LocalPosition: {x: 0.771, y: 0.675, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 3826150664165621310}
@@ -54,7 +84,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3826150662995853308}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.264, y: -0.5, z: 0}
+  m_LocalPosition: {x: 3.247, y: 1.253, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 3826150664165621310}
@@ -84,7 +114,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3826150663383188571}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.203, y: -0.855, z: 0}
+  m_LocalPosition: {x: 1.801, y: 0.796, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 3826150664165621310}
@@ -114,7 +144,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3826150663401088517}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.975, y: -0.751, z: 0}
+  m_LocalPosition: {x: -2.083, y: -1.062, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 3826150664165621310}
@@ -144,7 +174,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3826150663750703293}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.224, y: 0.702, z: 0}
+  m_LocalPosition: {x: -1.685, y: 1.437, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 3826150664165621310}
@@ -183,6 +213,7 @@ Transform:
   - {fileID: 3826150663383188570}
   - {fileID: 3826150662995853307}
   - {fileID: 3826150662987274298}
+  - {fileID: 563406517}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -201,15 +232,17 @@ MonoBehaviour:
   EnemiesToSpawn:
   - {fileID: 6579996008866726822, guid: 6d8906a4a77a7c140b5d74f051a3c1fc, type: 3}
   - {fileID: 685562112699025631, guid: b054ab7881b08734985db27772ce9506, type: 3}
-  Boss: {fileID: 6240466038640164999, guid: a9a5aff4a82ba5b4cbc23474394e623c, type: 3}
+  Boss: {fileID: 9163863304828976794, guid: 0d6f8ac389f29ee4eab06245ad544bf2, type: 3}
   spawnStartTime: 0
-  spawnRepeatRate: 5
+  spawnRepeatRate: 10
   SpawnPoints:
   - {fileID: 3826150663750703292}
   - {fileID: 3826150663401088516}
   - {fileID: 3826150663383188570}
   - {fileID: 3826150662995853307}
+  - {fileID: 563406517}
   BossSpawnPoint: {fileID: 3826150662987274298}
   AllEnemies: []
   EnemyWaves: 5
-  EnemySpawnPrWave: 1
+  EnemySpawnPrWave: 7
+  WinText: {fileID: 0}

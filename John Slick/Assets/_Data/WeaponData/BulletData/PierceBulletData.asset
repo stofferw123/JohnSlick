@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: PierceBulletData
   m_EditorClassIdentifier: 
   <BulletPrefab>k__BackingField: {fileID: 2226613675976637458, guid: dd33169b851d78c4ebfaf55c75b968b0, type: 3}
-  <BulletSpeed>k__BackingField: 7.6
+  <BulletSpeed>k__BackingField: 7
   <Damage>k__BackingField: 5
   <Friction>k__BackingField: 0
   <Bounce>k__BackingField: 0
