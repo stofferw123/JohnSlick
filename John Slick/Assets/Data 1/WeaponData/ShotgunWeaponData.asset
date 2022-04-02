@@ -16,6 +16,6 @@ MonoBehaviour:
   <AmmoCapacity>k__BackingField: 8
   <AutomaticFire>k__BackingField: 0
   <WeaponDelay>k__BackingField: 0.382
-  <SpreadAngle>k__BackingField: 5
+  <SpreadAngle>k__BackingField: 8.23
   multiBulletShoot: 1
   bulletCount: 5
